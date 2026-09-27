@@ -191,6 +191,20 @@ h2 em, h1 em { color: var(--gold-light); }
 .route-art::before { opacity: .68; }
 .route-art::after { opacity: .5; }
 .route-point { color: #eee7d8; }
+.route-map { min-width: 0; min-height: 540px; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; border: 1px solid var(--gold); background: #0b293e; }
+.route-map-heading, .route-map-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; color: var(--gold-light); font-size: 9px; font-weight: 700; letter-spacing: .13em; }
+.route-map-heading { border-bottom: 1px solid var(--line); }
+.route-map-footer { border-top: 1px solid var(--line); }
+.route-map-footer a { color: #f3ece0; text-transform: uppercase; white-space: nowrap; }
+.route-map-footer a span { margin-left: 7px; color: var(--gold-light); font-size: 15px; }
+.route-map-footer a:hover { color: var(--gold-light); }
+.route-map iframe { display: block; width: 100%; height: 100%; min-height: 440px; border: 0; background: #e9e7df; }
+@media (max-width: 680px) {
+  .route-map { min-height: 390px; }
+  .route-map iframe { min-height: 315px; }
+  .route-map-heading, .route-map-footer { padding: 13px 14px; font-size: 8px; }
+  .route-map-footer { letter-spacing: .05em; }
+}
 
 .faq { background: #0a263a; border-top: 1px solid var(--line); }
 .faq-heading>p, .faq-list details p { color: #afbdbe; }
