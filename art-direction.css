@@ -203,7 +203,7 @@ h2 em, h1 em { color: var(--gold-light); }
   .route-map { min-height: 390px; }
   .route-map iframe { min-height: 315px; }
   .route-map-heading, .route-map-footer { padding: 13px 14px; font-size: 8px; }
-  .route-map-footer { letter-spacing: .05em; }
+  .route-map-footer { flex-wrap: wrap; letter-spacing: .05em; }
 }
 
 .faq { background: #0a263a; border-top: 1px solid var(--line); }
